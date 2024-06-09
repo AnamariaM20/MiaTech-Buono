@@ -1,3 +1,5 @@
 
+file_segreti/
 *.txt
+!lib/
 
