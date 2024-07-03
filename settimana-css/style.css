@@ -1,0 +1,32 @@
+p {
+    color: #b80707;
+    text-align: right;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+h2 {
+    color: rgb(226, 43, 83);
+}
+
+h3 {
+    color: rgb(43, 180, 226);
+}
+
+h4 {
+    color: rgb(15, 137, 86);
+}
+
+h5 {
+    color: rgb(20, 17, 17);
+}
+
+h6 {
+    color: rgb(44, 48, 121);
+}
+
+#h5 {
+    background-color: bisque;
+}
