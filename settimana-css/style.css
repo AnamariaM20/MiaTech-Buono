@@ -1,3 +1,11 @@
+* {
+    margin: 20px;
+    padding: 15px;
+    border: solid 0.5px;
+    border-radius: 10px;
+    border-color: black;
+}
+
 p {
     color: #b80707;
     text-align: right;
@@ -29,4 +37,18 @@ h6 {
 
 #h5 {
     background-color: bisque;
+}
+
+.font30 {
+    font-size: 30px;
+}
+
+.font30 .font30x {
+    text-align: center;
+}
+
+.font30 .font30y {
+    background-color: aqua;
+    border: solid;border-color:green; border-radius: 50px;
+    padding: 16px;
 }
