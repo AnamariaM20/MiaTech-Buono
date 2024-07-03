@@ -52,3 +52,43 @@ h6 {
     border: solid;border-color:green; border-radius: 50px;
     padding: 16px;
 }
+
+li, p {
+    font-style: italic;
+}
+
+a:hover {
+    color: #b80707;
+}
+
+.font30y:last-child {
+    font-size: 40px;
+}
+
+p {
+    font-size: 25px;
+}
+
+#first {
+    font-size: 45px;
+}
+.first-paragraph {
+    font-size: 35px;
+}
+
+.rgb {
+    color: rgb(rgb(197, 20, 20),);
+}
+
+.hex {
+    color: #b80707
+}
+
+.rgba {
+    color: rgba(180, 10, 10, 0.7);
+}
+
+.colore-name {
+    color: red;
+}
+
