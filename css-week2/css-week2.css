@@ -1,0 +1,51 @@
+/* Exercise 1 */
+
+:root {
+    display: flex;
+}
+.ex1 {
+    /* Exercise 1 */
+    padding: 100px;
+    /* Exercise 2 */
+    margin: 50px;
+    /* Exercise 3 */
+    border: solid rgba(255, 0, 0, 0.466);
+}
+    /* Exercise 4 */
+ul {
+    display: inline-block;
+    background-image: linear-gradient(rgba);
+}
+    /* Exercise 5 */
+span {
+    height: 100px;
+    width: 300px;
+    border: solid yellow 2px;
+    background-color: antiquewhite;
+}
+
+.inline {
+    display: inline;
+    margin: 20px;
+}
+
+.block {
+    display: block;
+    margin: 20px;
+}
+
+.inline-block {
+    display: inline-block;
+    margin: 20px;
+}
+
+    /* Exercise 7 */
+
+.hidden {
+   display: none;
+}
+    /* Exercise 8 */
+img {
+    float: right;
+    padding: 30px;
+}
