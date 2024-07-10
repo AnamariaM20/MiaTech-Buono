@@ -1,0 +1,14 @@
+.container {
+    height: 3000px;
+    width: 1000px;
+    position: relative;
+}
+
+.container__quadrato {
+    width: 80px;
+    height: 80px;
+    border: solid green 2px;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
