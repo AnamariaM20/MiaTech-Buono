@@ -49,3 +49,48 @@ img {
     float: right;
     padding: 30px;
 }
+    /* Exercise 9 */
+.clear {
+    clear:right;
+}
+
+    /* Exercise 10 */
+.cols {
+    display: flex;
+}
+
+    /* Exercise 11 */
+nav {
+    position: /*sticky*/;
+    top: 5px;
+    background-color: azure;
+}
+.nav___navbar-menu {
+    display: flex;
+    width: 1100px;
+    padding: 10px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    gap:10%;
+    color: rgb(6, 55, 6);
+    border: solid 2px rgb(6, 55, 6);
+}
+
+    /* Exercise 12 */
+
+    nav {
+        position: fixed;
+        top: 5px;
+        background-color: azure;
+    }
+
+    /* Exercise 13 */
+
+    footer {
+        position: fixed;
+        bottom: 5px;
+        background-color: azure;
+    }
+
+    /* Exercise 14 */
