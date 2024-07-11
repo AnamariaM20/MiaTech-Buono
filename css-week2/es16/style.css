@@ -1,0 +1,10 @@
+.container {
+    width: 1000px;
+    height: 1000px;
+}
+
+.container__fluid-design {
+    height: 20%;
+    width: 20%;
+    border: solid green 2px;
+}
