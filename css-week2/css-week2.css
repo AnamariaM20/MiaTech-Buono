@@ -90,7 +90,7 @@ nav {
     footer {
         position: fixed;
         bottom: 5px;
-        background-color: azure;
+        background-color: rgb(31, 165, 165);
     }
 
     /* Exercise 14 */
