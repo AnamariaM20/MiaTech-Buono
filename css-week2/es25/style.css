@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    flex-grow: 1;
+}
+
+.container__1 {
+    flex-grow: 1;
+    flex-basis: 25%;
+ }
+ .container__2 {
+    flex-grow: 1;
+    flex-basis: 25%;
+ }
+ 
+.container__3 {
+    display: flex;
+   flex-grow: 4 !important;
+   flex-basis: 50%;
+}
