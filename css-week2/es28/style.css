@@ -1,0 +1,19 @@
+.drinks {
+    display: flex;
+    gap: 15px;
+    border: solid 4px black;
+    align-items: center;
+    height: 300px;
+}
+
+.drinks div {
+    border: solid 4px black;
+}
+
+.coffee{
+    align-self:flex-start;
+}
+
+.juice{
+    align-self:flex-end;
+}
