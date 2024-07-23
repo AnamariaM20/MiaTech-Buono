@@ -3,4 +3,6 @@
     grid-template-columns: auto auto auto auto auto;
     grid-template-rows: 200px 300px;
     background-color: green;
+    align-items: center;
+    justify-content: center;
 }
