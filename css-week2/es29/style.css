@@ -14,3 +14,7 @@
 .item8 {
     grid-column 8 / span 2;
 }
+
+.item1 {
+    grid-row: 1 / 4;
+}
