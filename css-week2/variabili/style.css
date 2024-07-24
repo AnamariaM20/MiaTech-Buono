@@ -1,7 +1,9 @@
 :root {
     --color: red;
+    --pad: 30px;
 }
 
 * {
     color: var(--color);
+    padding: var(--pad);
 }
