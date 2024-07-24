@@ -1,3 +1,10 @@
+div {
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
 p:first-child {
     font-size: 7rem;
     color: black;
@@ -5,5 +12,20 @@ p:first-child {
 div p {
     font-size: 7em;
     color: blue;
+}
+
+@media screen and (max-width: 760px) {
+    div {
+        max-width: 100%;
+        float: left;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 16px;
+        color: yellow;
+    }
 }
 
