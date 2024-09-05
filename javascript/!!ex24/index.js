@@ -18,3 +18,4 @@ function createCounter(x) {// la funzione acceta un parametro con valore di part
   let counter2 = createCounter(20);
   console.log(counter1.increment());
   console.log(counter2.increment());
+

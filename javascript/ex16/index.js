@@ -19,11 +19,3 @@ fino quando la lungezza a 5 caracter=
 */
 
 
-
-
-//9
-// push se usa con un array;Sempre;
-let res = "";
-do {res = prompt("insert a word that contains minimum 5 letters");
-}
-while (res.length < 5); //la conditione e true? il ciclo se ripete; la conditione e false? il ciclo non se ripete; *false fa uscire i clicli; 
