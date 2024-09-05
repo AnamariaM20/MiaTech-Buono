@@ -88,14 +88,11 @@ let word2 = "Maria"
 console.log(word2.length)
 
 //9
-let world ="impecabile"
-do {world.length >= 0, world.length++} 
-while (world.length > 5) {
-    if (world.length == 5)
-    Break;
-}
-
-
+let world = "";
+world = prompt("insert a word that contains maximum 5 letters")
+do {let = i; world.length > 0; i++} 
+while (i == length[5]) 
+    Break 
 //10
 
 let books = 100;

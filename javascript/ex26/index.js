@@ -6,3 +6,4 @@ student = {
 }
 
 console.log(Object.values(student))
+

@@ -4,4 +4,6 @@ let student = {
     grade: "Elementary",
     school: "New York",
 }
-console.log(Object.entries(student))
+for (const [key, value] of Object.entries(student)) {
+    console.log(`${key}: ${value}`);
+  }

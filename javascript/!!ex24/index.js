@@ -1,20 +1,15 @@
 
-/*function createCounter(count) { 
-    function increment() {
-        count = count++;
+function makeCounter() {
+    let count = 0;
+  
+    function counter() {
+      return count++;
     }
-    function decrement() {
-        count = count--;
-    }
-}
-*/
+  
+    counter.set = value => count = value;
+  
+    counter.decrease = (counter()) => count--;
+  
+    return counter;
+  }
 
-function createCounter() { 
-        count = count++;
-        count = count--;
-}
-let countNumber = 10;
-let countNumber1;
-let counterNumber2
-
-console.log(createCounter(countNumber, countNumber1, counterNumber2))
