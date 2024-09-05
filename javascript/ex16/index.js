@@ -18,14 +18,12 @@ ce si Repete
 fino quando la lungezza a 5 caracter=
 */
 
-let result = "";
-let res = result.push(prompt("insert a word that contains maximum 5 letters"))
-console.log(result)
-do {
-  result.length > 0; result.length++;
-  break;
+
+
+
+//9
+// push se usa con un array;Sempre;
+let res = "";
+do {res = prompt("insert a word that contains minimum 5 letters");
 }
-while (result[i].length == 5);
-  
-  console.log(result.length)
-     
+while (res.length < 5); //la conditione e true? il ciclo se ripete; la conditione e false? il ciclo non se ripete; *false fa uscire i clicli; 
