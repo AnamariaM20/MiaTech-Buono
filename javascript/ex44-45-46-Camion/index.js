@@ -1,4 +1,10 @@
 class Automobile {
+    automobileInstance = "";
+    static verificaIstanza(object, clas) {
+        if(clas instanceof object);
+        return "the object has instance"
+    };
+
     constructor(marca, modello, anno){
         this.marca = marca;
         this.modello = modello;
@@ -11,6 +17,7 @@ class Automobile {
 }
 
     class Camion extends Automobile {
+        camionInstance = "";
         constructor(marca, modello, anno, maxCarico, pesoAtuale){
             super(marca, modello, anno);
             this.maxCarico = maxCarico;
@@ -29,8 +36,6 @@ class Automobile {
     };
 
 
-
-
 let auto = new Automobile("Ford", "Focus", 2016);
 console.log(auto)
 
@@ -38,3 +43,7 @@ console.log(auto)
 let truck = new Camion("Ford", "Focus", 2016, 2300, 1300);
 console.log(truck);
 console.log(truck.carica(1200));
+
+console.log(auto instanceof Object);
+console.log(truck instanceof Object);
+auto.verificaIstanza()
