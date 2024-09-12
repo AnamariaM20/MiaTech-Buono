@@ -1,9 +1,10 @@
 class Automobile {
     automobileInstance = "";
-    static verificaIstanza(object, clas) {
-        if(clas instanceof object);
-        return "the object has instance"
+    static verificaIstanza(y, x) {
+        if(x instanceof y){
+        return "the object has instance"}
     };
+    static verificaIstanza()
 
     constructor(marca, modello, anno){
         this.marca = marca;
@@ -28,9 +29,9 @@ class Automobile {
         };
         carica(kg){
             if(kg + this.pesoAtuale < this.maxCarico) {
-                return kg + this.pesoAtuale; // dove metto il peso atuale del camion?
+                this.pesoAtuale = kg + this.pesoAtuale
             } else {
-                return this.pesoAtuale;
+                this.pesoAtuale;
             };
         };
     };
@@ -42,8 +43,10 @@ console.log(auto)
 
 let truck = new Camion("Ford", "Focus", 2016, 2300, 1300);
 console.log(truck);
-console.log(truck.carica(1200));
 
-console.log(auto instanceof Object);
-console.log(truck instanceof Object);
-auto.verificaIstanza()
+Automobile.verificaIstanza(truck, Camion)
+
+truck.carica(500)
+console.log(truck.pesoAtuale)
+
+

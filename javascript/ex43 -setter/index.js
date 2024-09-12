@@ -26,9 +26,9 @@ class Automobile {
     get kms(){
         return this.km;
     }
-    set SetterKm (km){
-        if(kmSet >= this.km)  {
-            return kmSet +this.km
+    set (x){
+        if(x >= this.km)  {
+            this.km = x + this.km
         } else {
             this.km
         }
@@ -37,4 +37,6 @@ class Automobile {
 }
 let auto = new Automobile("Ford", "Focus", 2016, 200000);
 console.log(auto)
-console.log(aggiungiChilometri(200))
+console.log(auto.km)
+auto.set(300);
+console.log(auto.km)

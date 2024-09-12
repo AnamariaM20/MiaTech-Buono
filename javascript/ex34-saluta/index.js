@@ -1,4 +1,4 @@
-class automobile {
+class Automobile {
     constructor(marca, modello, anno){
         this.marca = marca;
         this.modello = modello;
@@ -8,14 +8,14 @@ class automobile {
     description() {
         console.log(`I want to buy a car ${this.marca} ${this.modello} from ${this.anno}`)
     }
-    saluto() {
+    saluta() {
         return `HELLO ${this.marca} ${this.modello} `
     }
-    
 }
+Automobile.prototype.saluta = function() { 
+    return `Hello ${this.marca} ${this.modello}`} 
 
-
-class elettrica extends automobile {
+class elettrica extends Automobile {
     constructor(marca, modello, anno, autonomia){
         super(marca);
         super(modello);
@@ -30,14 +30,15 @@ class elettrica extends automobile {
             const autonomiaRicaricata = this.autonomia[i];
         }
     }
+    
 }
 
 
-let auto = new automobile("Ford", "Focus", 2016);
+let auto = new Automobile("Ford", "Focus", 2016);
 console.log(auto);
 console.log(auto.marca);
 auto.description();
-
+auto.prototype.saluta();
 
 //const automobile = new auto()
 //automobile.introduce()
