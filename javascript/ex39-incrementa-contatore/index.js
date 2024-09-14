@@ -10,10 +10,11 @@ class automobile {
     description() {
         console.log(`I want to buy a car ${this.marca} ${this.modello} from ${this.anno}`)
     }
-    incrementaContatore() {
+    #incrementaContatore() {
         this.#contatoreChiamate++
         
     }
+    
    
 }
 
@@ -21,8 +22,4 @@ let auto = new automobile("Ford", "Focus", 2016);
 console.log(auto);
 console.log(auto.marca);
 auto.description();
-auto.returnIncrementaContatore(1);
-auto.returnIncrementaContatore(1);
-auto.returnIncrementaContatore(1);
-auto.returnIncrementaContatore(1);
 

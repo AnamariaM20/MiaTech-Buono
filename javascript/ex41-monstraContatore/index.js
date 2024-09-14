@@ -1,29 +1,30 @@
 class Automobile {
     #contatoreChiamate;
 
-    #incrementaContatore(){
-        this.#contatoreChiamate =+ 1; // praticamente come incremento il contatoreChiamate?
-        return this.#contatoreChiamate;
-    };
-
-    constructor(marca, modello, anno, km){
+    constructor(marca, modello, anno, km, contatoreChiamate){
         this.marca = marca;
         this.modello = modello;
         this.anno = anno;
         this.km = km;
+        this.#contatoreChiamate = 0
     };
-    
+    #incrementaContatore(){ //come chiamo questo metodo privato?
+        this.#contatoreChiamate++;
+    }
 
-    aggiungiChilometri() {
-        return this.#incrementaContatore();
-        };
-
+    aggiungiChilometri(km) {
+        this.km = this.km + km;
+        this.#incrementaContatore();
+    };
 
     monstraContatoreChiamate() {
-        count(this.aggiungiChilometri());
-        return count();
+        return this.#contatoreChiamate;
     }
 }
-let auto = new Automobile("Ford", "Focus", 2016, 200000);
+let auto = new Automobile("Ford", "Focus", 2016, 20000 );
 console.log(auto)
-console.log(aggiungiChilometri(200))
+
+auto.aggiungiChilometri(200)
+auto.aggiungiChilometri(300)
+auto.aggiungiChilometri(300)
+console.log(monstraContatoreChiamate())
