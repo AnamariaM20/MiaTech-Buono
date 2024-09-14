@@ -14,9 +14,6 @@ class automobile {
         this.#contatoreChiamate++
         
     }
-    returnIncrementaContatore() {
-        return this.#contatoreChiamate
-    }
    
 }
 

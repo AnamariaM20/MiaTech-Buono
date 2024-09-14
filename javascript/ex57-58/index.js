@@ -14,4 +14,4 @@ let person = {
 }
 
 let {name, email, ...rest} = person
-console.log(name, email, rest)
+console.log(name, email, rest

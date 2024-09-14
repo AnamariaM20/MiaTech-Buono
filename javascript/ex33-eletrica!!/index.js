@@ -1,19 +1,25 @@
-class automobile {
-    constructor(marca, modello, anno){
+class Automobile {
+    constructor(marca, modello, anno, km){
         this.marca = marca;
         this.modello = modello;
         this.anno = anno;
+        this.km = km;
     };
 
     description() {
         console.log(`I want to buy a car ${this.marca} ${this.modello} from ${this.anno}`)
     }
-    
+    aggiungiChilometri(km) {
+        this.km = this.km + km;
+    }//vivenono in 2 posti diversi;
+    mostraChilometraggio() {
+        return this.km;
+    }
 }
 
 
 class elettrica extends automobile {
-    constructor(marca, modello, anno,autonomia){
+    constructor(marca, modello, anno, autonomia){
         super(marca, modello, anno);
         this.autonomia = autonomia;
     }

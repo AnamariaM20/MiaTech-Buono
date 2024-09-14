@@ -13,7 +13,6 @@ class automobile {
 
 let auto = new automobile("Ford", "Focus", 2016);
 console.log(auto);
-console.log(auto.marca);
 auto.description();
 
 //const automobile = new auto()
