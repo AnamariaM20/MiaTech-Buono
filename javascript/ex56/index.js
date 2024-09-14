@@ -8,5 +8,7 @@ function calcola(...items){
     for( let item of items){sum += item;}
     return  sum;
 }
-let numeri = [3, 5, 7, 10, 12, 14]
-console.log(calcola(...numeri))
+//let numeri = [3, 5, 7, 10, 12, 14]
+console.log(calcola(3,5))
+console.log(calcola(3,5,7,10))
+console.log(calcola(3,5,7,10,12,14))
