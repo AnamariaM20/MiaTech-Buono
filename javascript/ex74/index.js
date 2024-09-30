@@ -1,30 +1,22 @@
-
-function calcolo( elemento1, elemento2, func ){
-    func(elemento1 + elemento2)
+/*function somma (a,b) {
+    let risultato = a + b
+    //console.log(risultato) // in console vedo il risutatato da qua
+    //alert(risultato) 
+    return risultato
 }
-calcolo(14, 55, function(sum){
-   document.write("sum: ", sum)
-
-   // perche non funziona con consol log invece di document.write?
-})
-
-
-
-function calcolo ((func) => {
-    func(elemento1 + elemento2)
-    return func()
-})
-func(2, 4)
-console.log(funct())
-
-
-// non va
-/*
-
-function calcolo((func)=> {
-    return func(elemento1 + elemento2)
-})
-let mio = func(14, 52);
-
-// arrow fucntion is an call back?
+somma(4,5)
+console.log(somma()) // perche mi dice NaN?
 */
+
+function sum(valore){
+    console.log(valore)
+}
+
+function calcolo(num1, num2, myCallback) {
+    let ris = num1 + num2;
+    myCallback(ris);
+    console.log(ris)
+  }
+
+  calcolo(5, 5, sum);
+  console.log(sum)
