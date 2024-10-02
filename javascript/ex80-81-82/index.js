@@ -21,7 +21,7 @@
   
   });
   */
-  //es 81
+  //es 81 Catena di promesse con condizioni
 /*
   new Promise(function(resolve, reject) {
 
@@ -40,15 +40,9 @@
     console.log(err);
   })
 
-
-    makePizza(['cheese', 'pineapple'])
-  .then(pizza => {
-    console.log(pizza);
-  })
-  .catch(handleError);
   
 
-  //82
+  //82 Catena di promesse con gestione degli errori
 
   
 
@@ -57,4 +51,76 @@
 }).then(result) => {
   throw new Error("Whoops!")
   }).catch(alert); 
-  */
+ 
+
+  // 83  Gestione degli errori con catch
+  fetch('https://ana-server') 
+  .then(response => response.json())
+  .catch(err => alert(err + 'there is a problem'))
+
+  //84 	Gestione degli errori con then e catch
+
+  const promise = new Promise((resolve, reject) => {
+    reject("false")
+    resolve("true");
+    
+  })
+
+  promise.then();
+     
+  promise.catch(e);
+
+const ok = ()=> {
+  console.log("il risposto e true");
+};
+
+const nonOk = ()=> {
+  console.log("il risposto e false");
+}
+
+promise.then(ok);
+     
+promise.catch(nonOk);
+ */
+
+//	 85 Gestione degli errori in una catena di promesse
+//perche non va?
+
+function getWheather(){
+  return new Promise(function(resolve, reject){
+    setTimeout(()=>{
+      resolve("cloudy")
+    }, 1000)
+    })
+  }
+
+  function getWheatherIcon(weather){
+    return new Promise(function(resolve, reject){
+      setTimeout(()=>{
+        switch("weather"){
+          case 'sunny':
+            resolve('☀️')
+            break
+          case 'cloudy':
+            resolve('☁️')
+            break
+          case 'rainy':
+            resolve('🌧️ ')
+            break
+          default:
+            reject("no icon found")  
+        }
+      }, 1000)
+    })
+  }
+
+  function onSucces(data){
+    return console.log(`succes ${data}`)
+  };
+  function onError (data){
+    return console.log(`Error:  ${data}`)
+  };
+
+  getWheather()
+    .then(getWheatherIcon)
+    .then(onSucces, onError)
