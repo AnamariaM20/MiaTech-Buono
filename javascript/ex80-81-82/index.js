@@ -1,6 +1,6 @@
-//es 80
+/*es 80
 
-/*new Promise(function(resolve, reject) {
+new Promise(function(resolve, reject) {
 
     setTimeout(() => resolve(1), 1000); 
   
@@ -12,26 +12,26 @@
   }).then(function(result) { 
   
     console.log(result); 
-    return result * 2;
+    return result + 3;
   
   }).then(function(result) {
   
     console.log(result); 
-    return result * 2;
+    return result + 3;
   
   });
-  */
+
   //es 81 Catena di promesse con condizioni
-/*
+
   new Promise(function(resolve, reject) {
 
     setTimeout(() => resolve(4), 1000); 
   
   }).then(function(result){
     if(result % 2 != 0) { 
-        return console.log("tutto bene")
+      console.log("tutto bene")
   } else {
-    return console.log("non va bene")
+      console.log("non va bene")
   }})
 
 
@@ -44,31 +44,29 @@
 
   //82 Catena di promesse con gestione degli errori
 
-  
+  new Promise((resolve, reject) => { 
+    let value = Math.random()
+    if(value >= 0.5) {
+      resolve() // non e obligatorio di avere un argumento
+    } else{
+      reject()
+    };
+});
 
-  new Promise((resolve, reject) => {
-    resolve(ok);
-}).then(result) => {
-  throw new Error("Whoops!")
-  }).catch(alert); 
- 
 
   // 83  Gestione degli errori con catch
   fetch('https://ana-server') 
   .then(response => response.json())
   .catch(err => alert(err + 'there is a problem'))
 
+   
+
   //84 	Gestione degli errori con then e catch
 
   const promise = new Promise((resolve, reject) => {
     reject("false")
-    resolve("true");
-    
+    //resolve("true");
   })
-
-  promise.then();
-     
-  promise.catch(e);
 
 const ok = ()=> {
   console.log("il risposto e true");
@@ -79,7 +77,6 @@ const nonOk = ()=> {
 }
 
 promise.then(ok);
-     
 promise.catch(nonOk);
  */
 
@@ -89,7 +86,7 @@ promise.catch(nonOk);
 function getWheather(){
   return new Promise(function(resolve, reject){
     setTimeout(()=>{
-      resolve("cloudy")
+      resolve("pdbjhd")
     }, 1000)
     })
   }
@@ -97,7 +94,7 @@ function getWheather(){
   function getWheatherIcon(weather){
     return new Promise(function(resolve, reject){
       setTimeout(()=>{
-        switch("weather"){
+        switch(weather){
           case 'sunny':
             resolve('☀️')
             break
@@ -122,5 +119,8 @@ function getWheather(){
   };
 
   getWheather()
-    .then(getWheatherIcon)
-    .then(onSucces, onError)
+    .then(getWheatherIcon)// si trata della promise di getWheather
+    .then(onSucces)// si trata della promise di getWheatherIcon
+    .catch(onError)
+
+  
