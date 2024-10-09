@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                colors: {
+                    'blumarine': '#6DC0D5',
+                    "pulsante1": "#B2CEDE",
+                    "pulsante2": ""
+                },
+                fontFamily: {
+                    sans: ['Graphik', 'sans-serif'],
+                },
+                extend: {
+                    color: {
+                        "primary": "#AD7A99",
+                    },
+                    spacing: {
+                    },
+                    margin: {
+                        miomargin: "27px"
+                    },
+                    padding: {
+                        miopadding: "7px"
+                    }
+                },
+            },
+            plugins: [],
+        }
+    </script>
+
+</head>
+
+<body>
+    <!--Non mi prende le clase che ho datto, forse il colegamento tra i config  file non va bene-->
+    <div class=" bg-blue-300  m-64 h-32">
+        <p class="miomargin miopadding text-primary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
+            qui eius voluptate. Fugiat corrupti blanditiis dolorem modi repudiandae vero iure officiis, expedita odit,
+            optio illo et enim veritatis dignissimos porro.</p>
+
+    </div>
+</body>
+
+</html>

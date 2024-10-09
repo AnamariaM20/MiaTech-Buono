@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                colors: {
+                    "blumarine": "#6DC0D5",
+                    "pulsante1": "#8CDFD6",
+                    "pulsante2": "#5A716A"
+                },
+                fontFamily: {
+                    sans: ['Graphik', 'sans-serif'],
+                },
+                extend: {
+                    color: {
+                        "primary": "#AD7A99",
+                    },
+                    spacing: {
+                    },
+                    margin: {
+                        miomargin: "27px"
+                    },
+                    padding: {
+                        miopadding: "7px"
+                    }
+                },
+            },
+            plugins: [],
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <button class="bg-pulsante1 hover:text-blumarine m-miomargin p-miopadding"> YES </button>
+        <button class="bg-pulsante2 hover:text-blumarine m-miomargin p-miopadding"> NO </button>
+    </div>
+</body>
+
+</html>
