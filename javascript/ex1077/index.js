@@ -19,16 +19,9 @@ function checkInputs(){
     const nomeValue = nome.value;
     const passwordValue = password.value;
 
-    if (nomeValue && passwordValue == "" ){
-        alert("you have to put a name here")        
+    if (nomeValue == "" || passwordValue == "" ){
+        alert("you have to complete the form")        
     }
-    if ( passwordValue == "" ){
-        alert("you have to put a password here")        
-    } 
     
 }
-
-function sentInput (){
-
-}
-    
+   
