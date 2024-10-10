@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Non mi prende disable-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    color: {
+                        "primary": "#AD7A99",
+                    },
+                    spacing: {
+                    },
+                    margin: {
+                        miomargin: "27px"
+                    },
+                    padding: {
+                        miopadding: "7px"
+                    }
+                },
+            },
+            plugins: [],
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <label>Insert your name</label>
+        <input type="text" disabled class="disabled:m-32 disabled:bg-grey-800 disabled:border-red-400 disabled:border disabled:p-2 disabled:text-red-800"  placeholder="it is disabled">
+        <label>Insert your name</label>
+        <input  type="text" class="m-32 ring border-blue-100 border p-2">
+        
+        <label>Insert your email</label>
+        <input type="email"
+            class=" m-32 focus:outline-none focus:ring focus:border-blue-100 focus:rounded-3xl border p-2">
+        <label>Are you sure you want to sent? </label>
+        <button class=" m-32 bg-pulsante2 active:text-blumarine active:text-3xl active:rounded-xl p-miopadding"> Sent
+            the info </button>
+    </form>
+</body>
+
+</html>

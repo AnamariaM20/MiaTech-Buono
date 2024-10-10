@@ -3,9 +3,8 @@ module.exports = {
   content: ["./*.html"],
   theme: {
     colors:{
-      'blumarine': '#6DC0D5',
-      "pulsante1" : "#B2CEDE",
-      "pulsante2" : ""
+      "blumarine": '#6DC0D5',
+      "pulsante1" : "#B2CEDE"
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],

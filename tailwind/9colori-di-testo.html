@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                colors: {
+                    "blumarine": "#6DC0D5",
+                    "pulsante1": "#8CDFD6",
+                    "pulsante2": "#5A716A",
+                    "rose": "#AD7A99",
+                    "yellow": "#ffb703",
+                    "sea": "#bde0fe"
+                },
+                fontFamily: {
+                    sans: ['Graphik', 'sans-serif'],
+                },
+                extend: {
+                    color: {
+                        "primary": "#AD7A99",
+                    },
+                    spacing: {
+                    },
+                    margin: {
+                        miomargin: "27px"
+                    },
+                    padding: {
+                        miopadding: "7px"
+                    }
+                },
+            },
+            plugins: [],
+        }
+    </script>
+</head>
+
+<body>
+    <div >
+        <h2 class="text-blumarine m-miomargin"> Colori di testo </h2>
+        <h2 class="text-yellow m-miomargin"> Colori di testo </h2>
+    </div>
+    <p class="m-miomargin  text-rose">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi distinctio eveniet iure ab assumenda officia nostrum ipsum dolor quae sed, hic et perferendis fugiat, repellendus quia harum vero perspiciatis praesentium.
+    </p>
+    <div class="">
+        <p class="m-miomargin  text-pulsante2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi distinctio eveniet iure ab assumenda officia nostrum ipsum dolor quae sed, hic et perferendis fugiat, repellendus quia harum vero perspiciatis praesentium.
+        </p>
+        <p class="m-miomargin  text-rose">
+            You find more <a class="m-miomargin  text-sea" href="https://www.sardegnaturismo.it/en">  here</a>
+        </p>
+    </div>
+</body>
+
+</html>

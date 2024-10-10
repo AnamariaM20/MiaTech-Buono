@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./tailwind./input.css -o ./tailwind./css/style.css",
-    "watch": "npx tailwindcss -i ./tailwind/input.css -o ./tailwind./css/style.css --watch"
+    "build": "npx tailwindcss -i ./input.css -o ./css/style.css",
+    "watch": "npx tailwindcss -i ./input.css -o ./css/style.css --watch"
   },
   "keywords": [],
   "author": "",

@@ -10,9 +10,9 @@
         tailwind.config = {
             theme: {
                 colors: {
-                    'blumarine': '#6DC0D5',
-                    "pulsante1": "#B2CEDE",
-                    "pulsante2": ""
+                    "blumarine": "#6DC0D5",
+                    "pulsante1": "#8CDFD6",
+                    "pulsante2": "#5A716A"
                 },
                 fontFamily: {
                     sans: ['Graphik', 'sans-serif'],
@@ -34,16 +34,12 @@
             plugins: [],
         }
     </script>
-
 </head>
 
 <body>
-    <!--Non mi prende le clase che ho datto, forse il colegamento tra i config  file non va bene-->
-    <div class=" bg-blue-300  m-64 h-32">
-        <p class="miomargin miopadding text-primary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
-            qui eius voluptate. Fugiat corrupti blanditiis dolorem modi repudiandae vero iure officiis, expedita odit,
-            optio illo et enim veritatis dignissimos porro.</p>
-
+    <div>
+        <button class="bg-pulsante1 hover:text-blumarine hover:text-3xl hover:rounded-xl  m-miomargin p-miopadding"> YES </button>
+        <button class="bg-pulsante2 hover:text-blumarine hover:text-3xl hover:rounded-xl m-miomargin p-miopadding"> NO </button>
     </div>
 </body>
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Mi dice che il modo di instalazione non va bene-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                colors: {
+                    "blumarine": "#6DC0D5",
+                    "pulsante1": "#8CDFD6",
+                    "pulsante2": "#5A716A",
+                    "rose": "#AD7A99",
+                    "yellow": "#ffb703",
+                    "sea": "#bde0fe"
+                },
+                fontFamily: {
+                    sans: ['Graphik', 'sans-serif'],
+                },
+                extend: {
+                    color: {
+                        "primary": "#AD7A99",
+                    },
+                    spacing: {
+                    },
+                    margin: {
+                        miomargin: "27px"
+                    },
+                    padding: {
+                        miopadding: "7px"
+                    }
+                },
+            },
+            plugins: [],
+        }
+    </script>
+</head>
+
+<body>
+    <div class="dark:bg-pulsante2 dark:text-sea dark:m-miomargin">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi distinctio eveniet iure ab assumenda officia
+            nostrum ipsum dolor quae sed, hic et perferendis fugiat, repellendus quia harum vero perspiciatis
+            praesentium.
+        </p>
+    </div>
+    <div class="p-4">
+        <button id="darkModeToggle" class="border px-4 py-1 cursor-pointer">Dark Mode: <span id="darkModeStatus">Inactive</span></button>
+    </div>
+    <script>
+        const toggleDarkMode = () => {
+            document.body.classList.toggle("dark")
+            document.querySelector("#darkModeStatus").innerHTML=document.body.classList.contains("dark") ? "Active" : "Inactive";
+        };
+        document.querySelector("#darkModeToggle").addEventListener("click", toggleDarkMode)
+    </script>
+</body>
+
+</html>
