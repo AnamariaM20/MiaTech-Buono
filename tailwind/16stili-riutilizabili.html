@@ -1,0 +1,59 @@
+<!--Non vaaa-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    color: {
+                        primary: "#F4B266",
+                        seconday: "#9B7E46",
+                    },
+                    spacing: {
+                    },
+                    margin: {
+                        margin27: "27px"
+                    },
+                    padding: {
+                    },
+                    width: {
+                        w45: "45px",
+                    },
+                    textoverflow: {
+                        ov: "textoverflow"
+                    }
+                
+                },
+            },
+            plugins: [],
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components{
+            
+            .card {
+                @apply text-secondary w45 ov bg-primary;
+            }
+
+            .btn {
+                @apply text-secondary  hover:bg-primary margin27 active:ov transition duration-150
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic alias vitae eligendi excepturi, expedita numquam exercitationem sint aut, et fuga commodi quasi dolor animi sapiente deserunt voluptatibus repellendus non est?</p>
+    </div>
+    <div>
+        <button class="btn"></button>
+    </div>
+</body>
+</html>

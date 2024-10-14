@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Non mi prende disable-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    color: {
+                        "primary": "#AD7A99",
+                    },
+                    spacing: {
+                    },
+                    margin: {
+                        miomargin: "27px"
+                    },
+                    padding: {
+                        miopadding: "7px"
+                    }
+                },
+            },
+            plugins: [],
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label>Insert your name</label>
+            <input type="text" disabled  class="disabled:bg-red-800 disabled:rounded-xl bg-red-100 border-red-800 border-2"
+                >
+        </div>
+        <div>
+            <label>Insert your name</label>
+            <input type="text" class="disabled:bg-red-800 disabled:rounded-xl bg-red-100 border-red-800 border-2">
+        </div>
+        <div>
+            <label>Insert your email</label>
+            <input type="email" disabled class="disabled:bg-red-800 disabled:rounded-xl bg-red-100 border-red-800 border-2">
+        </div>
+        <div>
+            <label>Are you sure you want to sent? </label>
+            <button class=" disabled:bg-red-800 disabled:rounded-xl bg-red-100 border-red-800 border-2">
+                Sent the info </button>
+        </div>
+    </form>
+</body>
+
+</html>
