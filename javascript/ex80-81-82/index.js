@@ -63,22 +63,30 @@ new Promise(function(resolve, reject) {
 
   //84 	Gestione degli errori con then e catch
 
-  const promise = new Promise((resolve, reject) => {
-    reject("false")
-    //resolve("true");
-  })
-
-const ok = ()=> {
-  console.log("il risposto e true");
-};
-
-const nonOk = ()=> {
-  console.log("il risposto e false");
+function nuovaVariabile() {
+    return new Promise((resolve, reject) => {
+        if (false) { 
+        resolve('promessa risolta');
+        
+        } else {
+        reject('promessa rifiutata');
+        
+    }
+})
 }
 
-promise.then(ok);
-promise.catch(nonOk);
- */
+nuovaVariabile()
+.then((messaggio) => {
+    console.log(messaggio);
+})
+
+.catch((errore) => {
+    console.error(errore);
+})
+
+.finally(() => {
+    console.log('operazione completata')
+})
 
 //	 85 Gestione degli errori in una catena di promesse
 //perche non va?

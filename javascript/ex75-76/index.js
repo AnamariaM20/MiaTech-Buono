@@ -7,6 +7,13 @@
 }
 func(2, 4)
 console.log(func()) */
+function firstvalue(a, b, callback){
+    callback(a + b)
+}
+
+firstvalue(20, 40, function(c){
+    console.log(c)
+})
 
 //76
 function sayHi(fName, lName){
@@ -15,10 +22,23 @@ function sayHi(fName, lName){
         return wish + " " + fName + " " + lName;
     }
     return getFname()
-    console.log(getFname())
 }
-
-
-
 let message = sayHi("Ana", "Maria")
 alert(message)
+
+
+
+
+
+function functionA(callback) {
+    setTimeout(function() {
+        console.log("Prima  callback");
+        callback();
+    }, 5000);
+}
+
+function functionB() {
+    console.log("Callback  funzione");
+}
+
+functionA(functionB);

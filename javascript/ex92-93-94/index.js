@@ -45,3 +45,22 @@ fetchPromise
 //Utilizzare un'API che supporta CORS
 //Creare uno script che faccia una richiesta GET a un'API pubblica che 
 //supporta CORS. Stampare i dati restituiti nella console.
+
+async function ottieniDatiDaAPI() {
+  const url = 'https://api.github.com/users'; 
+
+  try {
+    const response = await fetch(url);
+    
+    if (!response.ok) {
+      throw new Error(`Errore nella richiesta: ${response.status}`);
+    }
+    const dati = await response.json();
+    
+    console.log(dati);
+  } catch (errore) {
+    console.error("Si è verificato un errore:", errore.message);
+  }
+}
+
+ottieniDatiDaAPI();
