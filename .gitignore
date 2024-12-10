@@ -3,4 +3,4 @@ file_segreti/
 *.txt
 !lib/
 !feature.txt
-
+node_modules
